@@ -31,3 +31,26 @@ Nginx File Format
 Tomcat:
 	Examples:
 		10.1.1.1 - - [31/Oct/2010:09:02:00 -0500] "GET /example.html?foo=bar HTTP/1.1" 200 999
+
+
+
+
+
+python .\log2pcap3.py -h
+usage: log2pcap [-h] -l LOG -o OUTPUT -p PORT [-s SERVER] [-d DUMP] -t {apache,webseal,nginx,iis,iis-w3c,tomcat} [-v] [-V]
+
+Log2Pcap: Server log to Pcap file,
+
+options:
+  -h, --help            show this help message and exit
+  -l LOG, --log LOG     server log
+  -o OUTPUT, --output OUTPUT
+                        pcap output file
+  -p PORT, --port PORT  server port
+  -s SERVER, --server SERVER
+                        server ip
+  -d DUMP, --dump DUMP  Every X connections dump to file
+  -t {apache,webseal,nginx,iis,iis-w3c,tomcat}, --template {apache,webseal,nginx,iis,iis-w3c,tomcat}
+                        log server type
+  -v, --version         show program's version number and exit
+  -V, --verbosity       print output
